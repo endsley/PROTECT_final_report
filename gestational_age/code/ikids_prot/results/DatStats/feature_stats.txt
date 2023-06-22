@@ -1,0 +1,73 @@
+             missing %
+sex           2.727273
+age_m         0.000000
+BMI_prepreg   3.850267
+edu_m         0.588235
+income       12.245989
+preg_number   0.588235
+smk_m         3.475936
+shs           9.090909
+alc           1.069519
+stress        8.770053
+MBP           2.887701
+MBZP          2.727273
+MCNP          2.780749
+MCOP          2.887701
+MCPP          2.673797
+MECPP         2.887701
+MEHHP         2.887701
+MEHP          2.620321
+MEOHP         2.887701
+MEP           2.887701
+MHBP         18.128342
+MHIBP        18.181818
+MIBP          2.887701
+DCP24         5.454545
+DCP25         5.454545
+BP3           5.454545
+BPA           5.454545
+BPS          17.807487
+MPB           5.454545
+PPB           5.454545
+TCB          17.860963
+TCS           5.401070
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 1870 entries, 0 to 1869
+Data columns (total 32 columns):
+ #   Column       Non-Null Count  Dtype  
+---  ------       --------------  -----  
+ 0   sex          1819 non-null   float64
+ 1   age_m        1870 non-null   int64  
+ 2   BMI_prepreg  1798 non-null   float64
+ 3   edu_m        1859 non-null   float64
+ 4   income       1641 non-null   float64
+ 5   preg_number  1859 non-null   float64
+ 6   smk_m        1805 non-null   float64
+ 7   shs          1700 non-null   float64
+ 8   alc          1850 non-null   float64
+ 9   stress       1706 non-null   float64
+ 10  MBP          1816 non-null   float64
+ 11  MBZP         1819 non-null   float64
+ 12  MCNP         1818 non-null   float64
+ 13  MCOP         1816 non-null   float64
+ 14  MCPP         1820 non-null   float64
+ 15  MECPP        1816 non-null   float64
+ 16  MEHHP        1816 non-null   float64
+ 17  MEHP         1821 non-null   float64
+ 18  MEOHP        1816 non-null   float64
+ 19  MEP          1816 non-null   float64
+ 20  MHBP         1531 non-null   float64
+ 21  MHIBP        1530 non-null   float64
+ 22  MIBP         1816 non-null   float64
+ 23  DCP24        1768 non-null   float64
+ 24  DCP25        1768 non-null   float64
+ 25  BP3          1768 non-null   float64
+ 26  BPA          1768 non-null   float64
+ 27  BPS          1537 non-null   float64
+ 28  MPB          1768 non-null   float64
+ 29  PPB          1768 non-null   float64
+ 30  TCB          1536 non-null   float64
+ 31  TCS          1769 non-null   float64
+dtypes: float64(31), int64(1)
+memory usage: 467.6 KB

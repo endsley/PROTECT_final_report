@@ -1,0 +1,60 @@
+All Networks
+	Batch size: 32: 
+	Learning rate: 0.001
+	Max number of epochs: 3000
+	Cost Function: costFunction
+	Device type: 'cuda'
+	Networks 0 Structure
+		Linear(in_features=14, out_features=500, bias=True) , relu
+		BatchNorm1d(500, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True) 
+		Linear(in_features=500, out_features=500, bias=True) , relu
+		BatchNorm1d(500, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True) 
+		Linear(in_features=500, out_features=500, bias=True) , relu
+		BatchNorm1d(500, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True) 
+		Linear(in_features=500, out_features=10, bias=True) , none
+	Networks 1 Structure
+		Linear(in_features=10, out_features=10, bias=True) , relu
+		Linear(in_features=10, out_features=500, bias=True) , relu
+		Linear(in_features=500, out_features=500, bias=True) , relu
+		Linear(in_features=500, out_features=500, bias=True) , relu
+		Linear(in_features=500, out_features=200, bias=True) , relu
+		Linear(in_features=200, out_features=14, bias=True) , none
+	Networks 2 Structure
+		Linear(in_features=10, out_features=2, bias=True) , none
+	Networks 3 Structure
+		Linear(in_features=2, out_features=500, bias=True) , relu
+		BatchNorm1d(500, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True) 
+		Linear(in_features=500, out_features=500, bias=True) , relu
+		BatchNorm1d(500, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True) 
+		Linear(in_features=500, out_features=1, bias=True) , none
+
+<IPython.core.display.HTML object>
+        MEP       BP3       TCS       PPB      MIBP       MPB       MBP  \
+0  3.141651 -2.175326  3.094729 -0.514397 -0.330525 -2.143101  0.605167   
+1  3.254350 -2.621860  2.549353 -0.838340 -0.659643 -2.617547  0.458419   
+
+      MECPP     DCP25     MHIBP    stress     age_m  BMI_prepreg    income  \
+0 -0.356426  0.099915  0.000000 -0.280754  0.078873     0.513582 -0.024994   
+1 -0.560066  0.085953 -0.275344 -0.435514 -0.188557     0.150007  0.106576   
+
+           y          ŷ   Δy  
+0  39.348946  39.348946  0.0  
+1  36.048328  36.048328  0.0  
+
+
+Most chosen             	Most weighted
+MEP                    2	MEP                  6.396
+BP3                    0	TCS                  5.644
+TCS                    0	BP3                  4.797
+PPB                    0	MPB                  4.761
+MIBP                   0	PPB                  1.353
+MPB                    0	MBP                  1.064
+MBP                    0	MIBP                 0.990
+MECPP                  0	MECPP                0.916
+DCP25                  0	stress               0.716
+MHIBP                  0	BMI_prepreg          0.664
+stress                 0	MHIBP                0.275
+age_m                  0	age_m                0.267
+BMI_prepreg            0	DCP25                0.186
+income                 0	income               0.132
+
